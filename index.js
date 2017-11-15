@@ -33,8 +33,8 @@ function currentLine(katzDeliLine){
     return "The line is currently empty."
   } else {
     var stringNeeded= "The line is currently: " //+ first count, add more to the end
-    for (var count = 0; count < katzDeliLine.length; count++){
-      stringNeeded = stringNeeded + (count + 1) + ". " + katzDeliLine[count] + ", "
+    for (var i = 0; i < katzDeliLine.length; i++){
+      stringNeeded += `{(i + 1)} .  + katzDeliLine[i] , `
   }
     var properString= stringNeeded.slice(0, (stringNeeded.length-2));
     return properString;
